@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectXamarin.Controllers.SignUpPage"
+              >
+    <ContentPage.Content>
+        <Grid RowDefinitions="*,Auto">
+
+            <Image Grid.RowSpan="2" Source="spot_Register.jpg" VerticalOptions="Start" Aspect="AspectFit" Opacity="0.9"/>
+            <Label Grid.Row="0" Text="Registration" FontSize="34" TextColor="White" VerticalOptions="End" FontAttributes="Bold" Padding="20,0,0,25"/>
+            <Frame Grid.Row="1" HasShadow="False" Margin="15,0,15,50" VerticalOptions="FillAndExpand" CornerRadius="20" Opacity="0.9">
+                <Grid RowDefinitions="Auto,Auto,Auto,Auto" RowSpacing="20" ColumnDefinitions="Auto" Padding="0,10,0,0">
+                    <Entry x:Name="txtName" Placeholder="Name" Grid.Row="1" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand"/>
+                    <Entry x:Name="txtEmail" Placeholder="Email" Grid.Row="2" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand"/>
+                    <Entry x:Name="txtPassword" Placeholder="Password" Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" IsPassword="True"/>
+                    <Entry x:Name="txtConfirmPassword" Placeholder="Confirm Password" Grid.Row="4" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" IsPassword="True"/>
+                    <Button x:Name="btnSignUp" Grid.Row="5" Grid.ColumnSpan="2" Text="sign Up" BackgroundColor="#1b2585" TextColor="White" FontSize="20" CornerRadius="10" Clicked="btnSignUp_Clicked"/>
+                    
+                </Grid>
+            </Frame>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

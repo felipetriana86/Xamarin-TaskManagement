@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "8w0bh778SbJZgkVA0qtTYDokC+3O+nVLRj/UAYW8qI+B2h5N8/LmkveBuBy3osl1VhI7L2rb5UJUiXioJO21bg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gatos\\Videos\\ProjectXamarin\\ProjectXamarin\\ProjectXamarin.iOS\\ProjectXamarin.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gatos\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\gatos\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

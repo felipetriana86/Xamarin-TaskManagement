@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectXamarin.Controllers.UserHomePage">
+    <ContentPage.Content>
+        <Grid Padding="0,10,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="3*"/>
+               
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Horizontal" Grid.Row="0">
+                <Label Text="Hi," FontSize="20" TextColor="#1b2585" VerticalOptions="Start" FontAttributes="Bold" Padding="20,0,0,0"/>
+                <Label x:Name="lblName" Text="" FontSize="20" TextColor="#1b2585"  FontAttributes="Bold" />
+            </StackLayout>
+            <StackLayout Grid.Row="1">
+                <Label Text="Tasks Created by you:" FontSize="20" TextColor="Black"  FontAttributes="Bold" Padding="20,0,0,0" />
+            </StackLayout>
+            <StackLayout Grid.Row="2">
+                <ListView x:Name="listTasks" RowHeight="100" ItemSelected="listTasks_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout VerticalOptions="FillAndExpand" Padding="20,0,40,0">
+                                    <Label Text="{Binding taskId}" FontSize="18" TextColor="Black"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding description}" FontSize="18" TextColor="Black" HorizontalOptions="Start" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Assigned to:" FontSize="18" TextColor="Black" HorizontalOptions="Start"></Label>
+                                        <Label Text="{Binding assignedToName}" FontSize="18" TextColor="Black" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <StackLayout Grid.Row="3" BackgroundColor="white" VerticalOptions="FillAndExpand">
+                <Button x:Name="btnAddTask" Text="Create New Task" TextColor="White" BackgroundColor="#1b2585" CornerRadius="10" Clicked="btnAddTask_Clicked"  Margin="5,0,5,0"/>
+                <Button x:Name="btnViewMyTasks" Text="View Assigned Tasks" TextColor="White" BackgroundColor="#1b2585" CornerRadius="10"  Margin="5,0,5,0" Clicked="btnViewMyTasks_Clicked"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
